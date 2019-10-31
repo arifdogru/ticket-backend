@@ -24,8 +24,8 @@ public class TicketController {
     //Find
 
     /**
-     * @URL /tickets
-     * @RequestMethod GET
+     * URL /tickets
+     * RequestMethod GET
      * @return List of all find op. results
      */
     @RequestMapping(value = "/tickets", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
@@ -35,8 +35,8 @@ public class TicketController {
 
     //Save
     /**
-     * @URL /tickets
-     * @RequestMethod POST
+     * URL /tickets
+     * RequestMethod POST
      * @return Ticket is added
      */
     @PostMapping("/tickets")
@@ -50,8 +50,8 @@ public class TicketController {
     }
 
     /**
-     * @URL /tickets/{id}
-     * @RequestMethod GET
+     * URL /tickets/{id}
+     * RequestMethod GET
      * @return A ticket of findbyid method
      */
     @GetMapping(value="/tickets/{id}")
@@ -60,8 +60,8 @@ public class TicketController {
     }
 
     /**
-     * @URL /tickets/ports/{airPort}
-     * @RequestMethod GET
+     * URL /tickets/ports/{airPort}
+     * RequestMethod GET
      * @return List of all findByAirport op. results
      */
     @RequestMapping(value = "/tickets/ports/{airPort}", method = RequestMethod.GET)
@@ -71,7 +71,7 @@ public class TicketController {
     }
 
     /**
-     * @URL /tickets/{airPort}
+     * URL /tickets/{airPort}
      * @RequestMethod DELETE
      */
     @RequestMapping(value = "/tickets/{airPort}", method = RequestMethod.DELETE)
